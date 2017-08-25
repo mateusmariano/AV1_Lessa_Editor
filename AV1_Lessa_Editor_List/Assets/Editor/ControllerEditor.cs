@@ -31,5 +31,6 @@ public class ControllerEditor : Editor {
 		}
 		if (GUILayout.Button ("Remover aluno") && Controller.lista.Count > 0) {
 			Controller.lista.RemoveAt (Controller.lista.Count - 1);
+		}
 	}
-}	
+}
