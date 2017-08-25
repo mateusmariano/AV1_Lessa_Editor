@@ -29,5 +29,7 @@ public class ControllerEditor : Editor {
 		if (GUILayout.Button ("Adicionar aluno")) {
 			Controller.lista.Add (new Entry("Aluno " + Controller.lista.Count.ToString(), Controller.lista.Count, Controller.lista.Count));
 		}
+		if (GUILayout.Button ("Remover aluno") && Controller.lista.Count > 0) {
+			Controller.lista.RemoveAt (Controller.lista.Count - 1);
 	}
 }	
